@@ -29,7 +29,7 @@ abstract class AbstractModelLogger
     }
 
 
-    protected function activityLogger(string $logName = null): ActivityLogger
+    protected function activityLogger(string $logName): ActivityLogger
     {
         $defaultLogName = $this->getLogName();
 
@@ -67,7 +67,7 @@ abstract class AbstractModelLogger
             $description .= ' by '.$this->getUserName(auth()->user());
         }
 
-        $this->activityLogger()
+        $this->activityLogger($this->getLogName())
             ->event($event)
             ->performedOn($model)
             ->withProperties($this->getLoggableAttributes($model, $attributes))
