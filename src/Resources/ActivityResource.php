@@ -1,6 +1,6 @@
 <?php
 
-namespace Z3d0X\FilamentLogger\Resources;
+namespace Qdsistemi\FilamentLogger\Resources;
 
 use BackedEnum;
 use Filament\Tables\Table;
@@ -23,7 +23,7 @@ use Filament\Schemas\Schema;
 use Spatie\Activitylog\Contracts\Activity;
 use Spatie\Activitylog\ActivitylogServiceProvider;
 use Spatie\Activitylog\Models\Activity as ActivityModel;
-use Z3d0X\FilamentLogger\Resources\ActivityResource\Pages;
+use Qdsistemi\FilamentLogger\Resources\ActivityResource\Pages;
 
 class ActivityResource extends Resource
 {
@@ -39,7 +39,7 @@ class ActivityResource extends Resource
 
     public static function form(Schema $schema): Schema
     {
-        return $form
+        return $schema
             ->schema([
                 Group::make([
                     Section::make([

@@ -1,6 +1,6 @@
 <?php
 
-namespace Z3d0X\FilamentLogger\Loggers;
+namespace Qdsistemi\FilamentLogger\Loggers;
 
 use Filament\Facades\Filament;
 use Illuminate\Auth\Events\Login;
