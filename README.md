@@ -1,14 +1,7 @@
-> [!WARNING]
-> This package is no longer maintained.  
-> If you’re interested in taking over maintenance, feel free to fork the repository.
-
 # Activity logger for filament
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/z3d0x/filament-logger.svg?style=for-the-badge)](https://packagist.org/packages/z3d0x/filament-logger)
-[![Total Downloads](https://img.shields.io/packagist/dt/z3d0x/filament-logger.svg?style=for-the-badge)](https://packagist.org/packages/z3d0x/filament-logger)
-
 <p align="center" class="filament-hidden">
-  <img alt="logger banner" src="https://raw.githubusercontent.com/z3d0x/filament-logger/main/art/banner.jpeg" />
+  <img alt="logger banner" src="https://raw.githubusercontent.com/4dsistemi/filament-logger/main/art/banner.jpeg" />
 </p>
 
 Configurable activity logger for filament.
@@ -28,15 +21,14 @@ Note: By default this package will log Filament Resource Events, Access(Login) E
 
 | Plugin Version | Filament Version |
 |----------------|------------------|
-| < 0.5.x        | ^2.11            |
-| >= 0.6.0       | 3.x              |
+| >= 1.0.0       | 4.x              |
 
 This package uses [spatie/laravel-activitylog](https://spatie.be/docs/laravel-activitylog), instructions for its setup can be found [here](https://spatie.be/docs/laravel-activitylog/v4/installation-and-setup)
 
 You can install the package via composer:
 
 ```bash
-composer require z3d0x/filament-logger
+composer require 4dsistemi/filament-logger
 ```
 After that run the install command:
 
@@ -88,9 +80,9 @@ php artisan vendor:publish --tag="filament-logger-translations"
 The main `Activity` class being used by the Filament Resource instance will be resolved by Spatie's service provider, which loads the model defined by the configuration key found at `activitylog.activity_model` in `config/activitylog.php`.
 
 ## Screenshots
-<img alt="logger-index" src="https://raw.githubusercontent.com/z3d0x/filament-logger/main/art/list-screenshot.png">
-<img alt="logger-detail-1" src="https://raw.githubusercontent.com/z3d0x/filament-logger/main/art/view-screenshot-1.png">
-<img alt="logger-detail-2" src="https://raw.githubusercontent.com/z3d0x/filament-logger/main/art/view-screenshot-2.png">
+<img alt="logger-index" src="https://raw.githubusercontent.com/4dsistemi/filament-logger/main/art/list-screenshot.png">
+<img alt="logger-detail-1" src="https://raw.githubusercontent.com/4dsistemi/filament-logger/main/art/view-screenshot-1.png">
+<img alt="logger-detail-2" src="https://raw.githubusercontent.com/4dsistemi/filament-logger/main/art/view-screenshot-2.png">
 
 ## Changelog
 
